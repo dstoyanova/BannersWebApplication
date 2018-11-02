@@ -17,7 +17,7 @@ To Create a banner, create a new **POST** request in Postman and paste the code 
 ```
 http://localhost:58718/api/Banner
 ```
-In the Headers section, set **Key** to *Content-Type* and the **Value** to *application/json*. In the **Body** section, enter the **raw** format and paste the following code:
+In the Headers section, set **Key** to *Content-Type* and the **Value** to *application/json*. In the Body section, enter the **raw** format and paste the following code:
 ```
 {
   "BannerId" : 1,
@@ -36,7 +36,7 @@ http://localhost:58718/api/Banner/1
 The number one stands for the BannerId. Here, you only need to change the Body section with updating the content of the JSON object. Everything else can be left the same. Send the request and this will update the document we created in the previous step.
 
 ### Get all the Banners
-To see a list of all the documents available in your database, create a new **GET** method in Postman and paste the following code into the URL section:
+To see a list of all the documents available in your database, create a new **GET** request in Postman and paste the following code into the URL section:
 ```
 http://localhost:58718/api/Banner
 ```
@@ -60,3 +60,7 @@ Finally, to delete a banner from the database, paste the following code into a *
 ```
 http://localhost:58718/api/Banner/1
 ```
+This will delete the document with BannerId equal to 1.
+
+### Notes
+If the requests you are sending to the API are successful, you will see **Status: 200 OK** in Postman. Of course, you can see all the changes done in the database as well.
